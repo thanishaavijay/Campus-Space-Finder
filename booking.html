@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Book a Space</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h2>Campus Space Finder</h2>
+    </header>
+
+    <main class="dashboard">
+
+        <h1>Book Your Campus Space</h1>
+
+        <p>Fill in the details to reserve your preferred space.</p>
+
+        <div class="login-container">
+
+            <form onsubmit="confirmBooking(event)">
+
+                <label for="roomName">Selected Room</label>
+
+                <input type="text" id="roomName" readonly>
+
+                <label for="bookingDate">Booking Date</label>
+
+                <input type="date" id="bookingDate" required>
+
+                <label for="startTime">Starting Time</label>
+
+                <input type="time" id="startTime" required>
+
+                <label for="endTime">Ending Time</label>
+
+                <input type="time" id="endTime" required>
+
+                <label for="purpose">Purpose of Booking</label>
+
+                <input type="text" id="purpose"
+                    placeholder="Enter purpose" required>
+
+                <button type="submit">Confirm Booking</button>
+
+            </form>
+
+        </div>
+
+        <h2>My Reservations</h2>
+
+        <div id="bookingList"></div>
+
+        <button onclick="window.location.href='dashboard.html'">
+            Back to Dashboard
+        </button>
+
+    </main>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

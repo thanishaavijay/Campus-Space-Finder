@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Student Registration</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h2>Campus Space Finder</h2>
+    </header>
+
+    <div class="login-container">
+
+        <h1>Create Account</h1>
+
+        <p>Register to explore campus spaces.</p>
+
+        <form onsubmit="register(event)">
+
+            <input type="text" id="name"
+                placeholder="Full Name" required>
+
+            <input type="email" id="regEmail"
+                placeholder="Student Email" required>
+
+            <input type="password" id="regPassword"
+                placeholder="Create Password" required>
+
+            <input type="password" id="confirmPassword"
+                placeholder="Confirm Password" required>
+
+            <button type="submit">Register</button>
+
+        </form>
+
+        <p>Already registered?
+            <a href="login.html">Login here</a>
+        </p>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

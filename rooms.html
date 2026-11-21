@@ -1,0 +1,48 @@
+\<!DOCTYPE html>
+
+\<html lang="en">
+
+\<head>     \<meta charset="UTF-8">     \<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+```
+<title>Available Rooms</title>
+
+<link rel="stylesheet" href="style.css">
+```
+
+\</head>
+
+\<body>
+
+```
+<header>
+    <h2>Campus Space Finder</h2>
+</header>
+
+<main class="dashboard">
+
+    <h1>Explore Campus Spaces</h1>
+
+    <p>Find the right space for your needs.</p>
+
+    <input
+        type="text"
+        id="roomSearch"
+        placeholder="Search rooms or facilities..."
+        onkeyup="filterRooms()">
+
+    <div class="room-container" id="roomList">
+        <p>Loading campus spaces...</p>
+    </div>
+
+    <button onclick="window.location.href='dashboard.html'">
+        Back to Dashboard
+    </button>
+
+</main>
+
+<script src="script.js"></script>
+```
+
+\</body>
+\</html>

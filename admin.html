@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Admin Dashboard</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h2>Campus Space Finder - Admin</h2>
+    </header>
+
+    <main class="dashboard">
+
+        <h1>Administrator Dashboard</h1>
+
+        <p>Manage campus spaces and student reservations.</p>
+
+        <div class="login-container">
+
+            <h2>Add New Campus Space</h2>
+
+            <form onsubmit="addRoom(event)">
+
+                <input type="text" id="adminRoomName"
+                    placeholder="Room Name" required>
+
+                <select id="adminCategory" required>
+                    <option value="">Select Category</option>
+                    <option value="Classroom">Classroom</option>
+                    <option value="Laboratory">Laboratory</option>
+                    <option value="Seminar Hall">Seminar Hall</option>
+                    <option value="Discussion Space">Discussion Space</option>
+                </select>
+
+                <input type="number" id="adminCapacity"
+                    placeholder="Room Capacity" min="1" required>
+
+                <input type="text" id="adminFacilities"
+                    placeholder="Facilities" required>
+
+                <button type="submit">Add Room</button>
+
+            </form>
+
+        </div>
+
+        <h2>Manage Campus Spaces</h2>
+
+        <div id="adminRoomList"></div>
+
+        <h2>Student Reservations</h2>
+
+        <div id="adminBookingList"></div>
+
+        <button onclick="window.location.href='dashboard.html'">
+            Student Dashboard
+        </button>
+
+    </main>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

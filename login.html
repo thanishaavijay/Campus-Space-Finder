@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Student Login</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h2>Campus Space Finder</h2>
+    </header>
+
+    <div class="login-container">
+
+        <h1>Welcome Back!</h1>
+
+        <p>Login to find your campus spaces.</p>
+
+        <form onsubmit="login(event)">
+
+            <input type="email" id="email"
+                placeholder="Enter your email" required>
+
+            <input type="password" id="password"
+                placeholder="Enter your password" required>
+
+            <button type="submit">Login</button>
+
+        </form>
+
+        <p>New student? 
+            <a href="register.html">Create an account</a>
+        </p>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

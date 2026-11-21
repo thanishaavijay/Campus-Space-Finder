@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Student Dashboard</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h2>Campus Space Finder</h2>
+    </header>
+
+    <main class="dashboard">
+
+        <h1>Welcome to Your Dashboard!</h1>
+
+        <p>Find the perfect space for your campus activities.</p>
+
+        <input type="text" id="searchInput"
+            placeholder="Search for classrooms, labs or facilities..."
+            onkeyup="searchRooms()">
+
+        <div class="room-container">
+
+            <div class="room-card">
+                <h2>Classrooms</h2>
+                <p>Find available classrooms for lectures and study.</p>
+                <button onclick="openRooms('Classroom')">Explore</button>
+            </div>
+
+            <div class="room-card">
+                <h2>Laboratories</h2>
+                <p>Find available computer and science laboratories.</p>
+                <button onclick="openRooms('Laboratory')">Explore</button>
+            </div>
+
+            <div class="room-card">
+                <h2>Seminar Halls</h2>
+                <p>Find spaces for presentations and events.</p>
+                <button onclick="openRooms('Seminar Hall')">Explore</button>
+            </div>
+
+            <div class="room-card">
+                <h2>Discussion Spaces</h2>
+                <p>Find spaces for group discussions and meetings.</p>
+                <button onclick="openRooms('Discussion Space')">Explore</button>
+            </div>
+
+        </div>
+
+        <button onclick="window.location.href='booking.html'">
+            My Bookings
+        </button>
+
+    </main>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

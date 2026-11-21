@@ -1,0 +1,174 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f6f9;
+    text-align: center;
+}
+
+header {
+    background-color: #243b55;
+    color: white;
+    padding: 20px;
+}
+
+main {
+    margin-top: 120px;
+}
+
+h1 {
+    color: #243b55;
+    font-size: 40px;
+}
+
+p {
+    color: #555;
+    font-size: 18px;
+}
+
+button {
+    background-color: #243b55;
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #141e30;
+}
+.login-container {
+    background-color: white;
+    width: 350px;
+    margin: 80px auto;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.login-container input {
+    width: 90%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.login-container button {
+    width: 100%;
+    margin-top: 15px;
+}
+
+.login-container a {
+    color: #243b55;
+    text-decoration: none;
+    font-weight: bold;
+}
+.dashboard {
+    padding: 40px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.dashboard input {
+    width: 60%;
+    padding: 15px;
+    margin: 25px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+.room-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+    max-width: 900px;
+    margin: 30px auto;
+}
+
+.room-card {
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.room-card h2 {
+    color: #243b55;
+}
+
+.room-card p {
+    color: #555;
+    line-height: 1.5;
+}
+
+@media (max-width: 650px) {
+    .room-container {
+        grid-template-columns: 1fr;
+    }
+
+    .dashboard input {
+        width: 85%;
+    }
+}
+.available {
+    color: green;
+    font-weight: bold;
+}
+
+.unavailable {
+    color: red;
+    font-weight: bold;
+}
+
+.room-card button:disabled {
+    background-color: grey;
+    cursor: not-allowed;
+}
+
+.room-card {
+    transition: transform 0.2s;
+}
+
+.room-card:hover {
+    transform: translateY(-5px);
+}
+
+.login-container label {
+    display: block;
+    text-align: left;
+    margin-top: 12px;
+    font-weight: bold;
+    color: #243b55;
+}
+
+.login-container input {
+    box-sizing: border-box;
+}
+
+.login-container input:read-only {
+    background-color: #eeeeee;
+}
+.login-container select {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: white;
+}
+
+.admin-card {
+    background-color: white;
+    padding: 20px;
+    margin: 15px auto;
+    max-width: 600px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.admin-card button {
+    margin: 5px;
+}
